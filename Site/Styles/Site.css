@@ -1,1 +1,33 @@
-﻿
+﻿hgroup h1, hgroup h2 {
+    font-family: Cubano;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+hgroup h3 {
+    font-family: GrandesignNeueSerif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+hr {
+    background: url('../images/drawing.gif') no-repeat;
+    border: none;
+    height: 130px;
+    width: 380px;
+}
+
+
+@font-face {
+    font-family: cubano;
+    src: url('../fonts/cubano-regular.woff'),
+         url('../fonts/cubano-regular.ttf'),
+         url('../fonts/cubano-regular.eot'); 
+}
+
+@font-face {
+    font-family: GrandesignNeueSerif;
+    src: url('../fonts/Grandesign-Neue-Serif.woff'),
+         url('../fonts/Grandesign-Neue-Serif.ttf'),
+         url('../fonts/Grandesign-Neue-Serif.eot'); 
+}
