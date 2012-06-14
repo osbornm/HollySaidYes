@@ -1,0 +1,76 @@
+%!Adobe-FontList 1.13
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Development\Personal\HollySaidYes\Media\Font\cubano-regular-webfont.eot
+FileModTime:1338511256
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Development\Personal\HollySaidYes\Media\Font\cubano-regular-webfont.svg
+FileModTime:1338511256
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Cubano-Regular
+FamilyName:Cubano
+StyleName:Regular
+FullName:Cubano Regular
+MenuName:Cubano
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Development\Personal\HollySaidYes\Media\Font\cubano-regular-webfont.ttf
+DataFormat:sfntData
+FileLength:35568
+FileModTime:1338511256
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Development\Personal\HollySaidYes\Media\Font\cubano-regular-webfont.woff
+FileModTime:1338511256
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Development\Personal\HollySaidYes\Media\Font\Grandesign Neue Serif.eot
+FileModTime:1338504213
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:GrandesignNeueSerif
+FamilyName:Grandesign Neue Serif
+StyleName:Regular
+FullName:Grandesign Neue Serif
+MenuName:Grandesign Neue Serif
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\Development\Personal\HollySaidYes\Media\Font\Grandesign Neue Serif.ttf
+DataFormat:sfntData
+FileLength:27580
+FileModTime:1338503398
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:C:\Development\Personal\HollySaidYes\Media\Font\Grandesign Neue Serif.woff
+FileModTime:1338504374
+%EndFont
+
