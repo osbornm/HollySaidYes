@@ -1,41 +1,123 @@
 ﻿body {
     background: url('../images/main-background.gif') repeat;
     color: #3d3d3d;
+    font-family: GrandesignNeueSerif;
+}
+
+a {
+    outline: 0;
 }
 
     .page-content {
         margin: 0 auto;
         width: 725px;
     }
-
-hgroup h1, hgroup h2 {
-    color: #4c4c4c;
-    font-family: Cubano;
-    font-size: 3em;
-    text-transform: uppercase;
     
-    background: url('../images/main-header.png') no-repeat;
-    width: 540px;
-    height: 130px;
-    line-height: 130px;
-    text-align: center;
-    margin: 40px auto;
-}
+        /* Main Headings */
+        hgroup {
+            margin: 50px 0;
+            
+            text-align: center;
+        }
 
-hgroup h3 {
-    font-family: GrandesignNeueSerif;
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
+        hgroup h1, hgroup h2 {
+            background: url('../images/main-header.png') no-repeat;
+            color: #4c4c4c;
+            font-family: Cubano;
+            font-size: 3em;
+            height: 130px;
+            line-height: 130px;
+            margin: 10px auto;
+            text-shadow: 3px 3px #f0f0f0;
+            text-transform: uppercase;
+            width: 540px;
+        }
 
-hr {
-    background: url('../images/drawing.gif') no-repeat;
-    border: none;
-    height: 130px;
-    margin: 50px 0;
-    width: 380px;
-}
+        hgroup h3 {
+            font-size: 1.3em;
+            font-weight: normal;
+            margin-left: auto;
+            margin-right: auto;
+            text-transform: uppercase;
+            width: 435px;
+        }
+        
+            hgroup h3.line {
+                background: url('../images/sub-header.gif') repeat-x 50%;
+            }
+  
+            hgroup h3 span {
+                background: url('../images/main-background.gif') repeat;
+                padding: 0 20px;
+            }
+        
+        
+        /* Body */
+        p {
+            font-size: .95em;
+            line-height: 1.5em;
+            text-align: justify;
+        }
 
+        hr {
+            background: url('../images/drawing.gif') no-repeat;
+            border: none;
+            height: 130px;
+            margin: 40px auto 80px auto;
+            width: 380px;
+        }
+        
+        
+        
+        /* Gallery */
+        #gallery {
+            margin-bottom: 50px;
+        }
+        
+        #mainImage {
+            border: solid 10px #fff;
+            height: 530px;
+            margin-bottom: 20px;
+            width: 705px;
+        }
+        
+        #images {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+            #images:after {
+                content: ".";
+                clear: both;
+                display: block;
+                height: 0;
+                visibility: hidden;
+            }
+            
+            #images li {
+                list-style: none;
+                float: left;
+                margin-right: 10px;
+            }
+            
+            #images li.last {
+                margin-right: 0;
+            }
+        
+                 #images li img {
+                    border: solid 10px #fff;
+                    height: 115px;
+                    width: 153px;
+                 }
+                 
+                 #images li img.selected {
+                    border: solid 10px #bed8d8;
+                 }
+        
+
+        
+        
 
 @font-face {
     font-family: cubano;

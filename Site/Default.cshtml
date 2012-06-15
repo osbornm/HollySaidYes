@@ -20,11 +20,10 @@
             to be matched with a beautiful woman, Holly who lived in the same city. We chatted back and forth a decent amount as 
             decided that we wanted to go on a full-blown date. When we were working out the details we found out that we oddly lived 
             in the same apartment complex only a few feet from each other, spooky right? We went on our first date, to outback, and 
-            had a great time and ended up staying up till almost two in the morning talking and getting to know each other. We went 
-            on our first date and had a great time and ended up staying up till almost two in the morning talking and getting to know 
-            each other.  Fast-forward six months, we meet each other’s families and we spending almost every moment of every day 
+            had a great time and ended up staying up till almost two in the morning talking and getting to know each other. 
+            Fast-forward six months, we meet each other’s families and we spending almost every moment of every day 
             together. Fast-forward another six months, and we moved in together and somehow managed to not kill each other in the 
-            process. Fast-forward a year to present time, I have asked Holly to join me for life and become my wife, but you can read 
+            process. Fast-forward a year to present time, I have asked Holly to join me for life and become <strong>my wife</strong>, but you can read 
             more about that later. No amount of words or pictures can describe the joy I have in my heart and the love that I have 
             for Holly!</p>
 
@@ -34,7 +33,69 @@
                 <h2>The Proposal</h2>
                 <h3>How it Went Down</h3>
             </hgroup>
+
+            <div id="gallery">
+                <img src="@Href("~/images/proposal-1.jpg")" id="mainImage" alt="The Proposal" />
+
+                <ul id="images">
+                    <li>
+                         <a href="@Href("~/images/proposal-1.jpg")">
+                            <img src="@Href("~/images/proposal-1.jpg")" alt="The Proposal" class="selected" />
+                        </a>
+                    </li>
+                    <li>
+                         <a href="@Href("~/images/proposal-2.jpg")">
+                            <img src="@Href("~/images/proposal-2.jpg")" alt="The Proposal" />
+                        </a>
+                    </li>
+                    <li>
+                         <a href="@Href("~/images/proposal-3.jpg")">
+                            <img src="@Href("~/images/proposal-3.jpg")" alt="The Proposal" />
+                        </a>
+                    </li>
+                    <li class="last">
+                         <a href="@Href("~/images/proposal-4.jpg")">
+                            <img src="@Href("~/images/proposal-4.jpg")" alt="The Proposal" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <p>I, this is Matthew, decided I was tired of the same old dating game and decided to join eHarmony. I was lucky enough 
+            to be matched with a beautiful woman, Holly who lived in the same city. We chatted back and forth a decent amount as 
+            decided that we wanted to go on a full-blown date. When we were working out the details we found out that we oddly lived 
+            in the same apartment complex only a few feet from each other, spooky right? We went on our first date, to outback, and 
+            had a great time and ended up staying up till almost two in the morning talking and getting to know each other. 
+            Fast-forward six months, we meet each other’s families and we spending almost every moment of every day 
+            together. Fast-forward another six months, and we moved in together and somehow managed to not kill each other in the 
+            process. Fast-forward a year to present time, I have asked Holly to join me for life and become <strong>my wife</strong>, but you can read 
+            more about that later. No amount of words or pictures can describe the joy I have in my heart and the love that I have 
+            for Holly!</p>
+
+
         </div>
         <script src="@Href("~/Scripts/jquery-1.7.2.min.js")"></script>
+        <script>
+            $(function() {
+                var myFullText = "";
+
+                $.each($('h3'), function() {
+                    $(this).addClass('line');
+                    myFullText = '<span>' + $(this).text() + '</span>';
+                    $(this).html(myFullText);
+                });
+
+
+                $('#images img').click(function() {
+                    var image = $("#mainImage");
+                    $('.selected').removeClass('selected');
+                    image.attr('src', $(this).attr("src"));
+                    $(this).addClass('selected');
+                    return false;
+                }).attr("title", "Click to see larger version.");
+
+            });
+        </script>
     </body>
 </html>
