@@ -6,6 +6,7 @@
 
 a {
     outline: 0;
+    color: #3d3d3d;
 }
 
     .page-content {
@@ -67,11 +68,9 @@ a {
             width: 380px;
         }
         
-        
-        
         /* Gallery */
         #gallery {
-            margin-bottom: 50px;
+            margin: 60px auto 50px auto;
         }
         
         #mainImage {
@@ -116,7 +115,29 @@ a {
                  }
         
 
+         /* Timeline */
         
+        #timeline { 
+            list-style: none;
+            padding: 0 0 0 10px;;
+        }
+        
+        #timeline li {
+            margin: 15px 0;
+        }
+        
+        #timeline h4 {
+            color: #4c4c4c;
+            display: inline-block;
+            font-family: Cubano;
+            font-size: 1.7em;
+            margin: 0;
+            padding: 0 10px 0 0;
+        }
+        
+        #timeline span {
+            font-size: 1.3em;
+        }
         
 
 @font-face {
