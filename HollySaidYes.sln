@@ -1,8 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Site", "Site\", "{83B4F1B9-EAF8-4448-B8C6-40F8AF6463F7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{55F9E243-62DC-4D57-A6E5-74DED79B4A15}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "localhost", "http://localhost:23790", "{E65E4693-B63F-4975-A7B9-CB140B3C18D5}"
 	ProjectSection(WebsiteProperties) = preProject
+		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/Site"
 		Debug.AspNetCompiler.PhysicalPath = "Site\"
@@ -18,13 +25,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Site", "Site\", "{83B4F1B9-
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "23790"
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{55F9E243-62DC-4D57-A6E5-74DED79B4A15}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
+		SlnRelativePath = "Site\"
 	EndProjectSection
 EndProject
 Global
@@ -32,8 +33,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83B4F1B9-EAF8-4448-B8C6-40F8AF6463F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83B4F1B9-EAF8-4448-B8C6-40F8AF6463F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E65E4693-B63F-4975-A7B9-CB140B3C18D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E65E4693-B63F-4975-A7B9-CB140B3C18D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
