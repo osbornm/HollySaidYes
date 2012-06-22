@@ -51,7 +51,7 @@
                 </li>
                 <li>
                     <h4><time>7:00</time></h4>
-                    <span>Private dining at Calins, on Lake Union, in the <a href="http://www.canlis.com/dining/about_cache.aspx">Caché room</a>.</span>
+                    <span>Private dining at Canlis, on Lake Union, in the <a href="http://www.canlis.com/dining/about_cache.aspx">Caché room</a>.</span>
                 </li>
                 <li>
                     <h4><time>8:00</time></h4>
@@ -60,47 +60,51 @@
             </ol>
 
             <div id="gallery">
-                <img src="@Href("~/images/proposal-1.jpg")" id="mainImage" alt="The Proposal" />
+
+                <figure id="mainImage">
+                    <img src="@Href("~/images/proposal-1.jpg")" alt="The Proposal" />
+                    <figcaption>The &quot;Rock&quot;, I cannot take credit for picking it out Holly gave me a limit set of choices.</figcaption>
+                </figure>
 
                 <ul id="images">
                     <li>
                          <a href="@Href("~/images/proposal-1.jpg")">
-                            <img src="@Href("~/images/proposal-1.jpg")" alt="The Proposal" class="selected" />
+                            <img src="@Href("~/images/proposal-1.jpg")" alt="The Proposal" title="The &quot;Rock&quot;, I cannot take credit for picking it out Holly gave me a limit set of choices." class="selected" />
                         </a>
                     </li>
                     <li>
                          <a href="@Href("~/images/proposal-2.jpg")">
-                            <img src="@Href("~/images/proposal-2.jpg")" alt="The Proposal" />
+                            <img src="@Href("~/images/proposal-2.jpg")" alt="The Proposal" title="Declaimer: This is not the real proposal, neither of us was this clam during the real deal!" />
                         </a>
                     </li>
                     <li>
                          <a href="@Href("~/images/proposal-3.jpg")">
-                            <img src="@Href("~/images/proposal-3.jpg")" alt="The Proposal" />
+                            <img src="@Href("~/images/proposal-3.jpg")" alt="The Proposal" title="The sealed deal after holly said yes!" />
                         </a>
                     </li>
                     <li class="last">
                          <a href="@Href("~/images/proposal-4.jpg")">
-                            <img src="@Href("~/images/proposal-4.jpg")" alt="The Proposal" />
+                            <img src="@Href("~/images/proposal-4.jpg")" alt="The Proposal" title="All said and done, during this picture Holly asked me what I had said to her when I proposed." />
                         </a>
                     </li>
                     <li>
                          <a href="@Href("~/images/proposal-5.jpg")">
-                            <img src="@Href("~/images/proposal-5.jpg")" alt="The Proposal"  />
+                            <img src="@Href("~/images/proposal-5.jpg")" alt="The Proposal" title="The two of us waiting on our pilot at the Kenmore seaport, the clouds parted just in time to give us an amazing view." />
                         </a>
                     </li>
                     <li>
                          <a href="@Href("~/images/proposal-6.jpg")">
-                            <img src="@Href("~/images/proposal-6.jpg")" alt="The Proposal" />
+                            <img src="@Href("~/images/proposal-6.jpg")" alt="The Proposal" title="Hanging out in the back of our plane after we landed, it is very cozy back there." />
                         </a>
                     </li>
                     <li>
                          <a href="@Href("~/images/proposal-7.jpg")">
-                            <img src="@Href("~/images/proposal-7.jpg")" alt="The Proposal" />
+                            <img src="@Href("~/images/proposal-7.jpg")" alt="The Proposal" title="View from the Caché room, it overlooks Lake Union and Gasworks Park." />
                         </a>
                     </li>
                     <li class="last">
                          <a href="@Href("~/images/proposal-8.jpg")">
-                            <img src="@Href("~/images/proposal-8.jpg")" alt="The Proposal" />
+                            <img src="@Href("~/images/proposal-8.jpg")" alt="The Proposal" title="One of our desert plates, yes we had more than one, with congratulations from the Canlis Staff." />
                         </a>
                     </li>
                 </ul>
@@ -131,12 +135,13 @@
 
 
                 $('#images img').click(function() {
-                    var image = $("#mainImage");
+                    var image = $("#mainImage img");
                     $('.selected').removeClass('selected');
                     image.attr('src', $(this).attr("src"));
+                    $("#mainImage figcaption").text($(this).attr("title"));
                     $(this).addClass('selected');
                     return false;
-                }).attr("title", "Click to see larger version.");
+                });
 
             });
         </script>

@@ -73,12 +73,29 @@ a {
             margin: 60px auto 50px auto;
         }
         
-        #mainImage {
+        figure {
             border: solid 10px #fff;
             height: 470px;
             margin-bottom: 20px;
+            margin-left: 0;
+            position: relative;
             width: 705px;
         }
+
+            figcaption {
+                background-color: rgba(0,0,0,0.5);
+	            bottom: 0;
+                color: #fff;
+                display: none;
+	            left: 0;
+                padding: 10px;
+                position: absolute;
+                width: 685px;
+            }
+
+            figure:hover figcaption {
+                display: block;
+            }
         
         #images {
             margin: 0;
