@@ -29,6 +29,15 @@
             more about that later. No amount of words or pictures can describe the joy I have in my heart and the love that I have 
             for Holly!</p>
 
+            <p>I, Holly, had lived in Seattle for about two year when I decided to take a different approach to dating, eHarmony.  
+            After many failed dates, I was ready to give up. Before I did though, I changed my age range just ever so slightly 
+            and amazing enough, Matthew appeared as a match. We went on our first date two days before I was going to leave on 
+            vacation for a month. I thought for sure it would never work; but I was persistent and just knew that he was something 
+            special. I texted him and called frequently when I was gone and when got back he was waiting for me. We began dating 
+            and I have never had so much fun in a relationship! We moved in a year after we started dating and it has been an 
+            adventure that has made our relationship stronger each day. Now I am <strong>engaged</strong> to the man of my dreams and I can’t wait 
+            for the life we get to share with each other.</p>
+
             <hr />
 
             <hgroup>
@@ -74,7 +83,7 @@
                     </li>
                     <li>
                          <a href="@Href("~/images/proposal-2.jpg")">
-                            <img src="@Href("~/images/proposal-2.jpg")" alt="The Proposal" title="Declaimer: This is not the real proposal, neither of us was this clam during the real deal!" />
+                            <img src="@Href("~/images/proposal-2.jpg")" alt="The Proposal" title="Declaimer: This is not the real proposal, neither of us was this calm during the real deal!" />
                         </a>
                     </li>
                     <li>
@@ -141,6 +150,10 @@
                     $("#mainImage figcaption").text($(this).attr("title"));
                     $(this).addClass('selected');
                     return false;
+                });
+
+                $('#mainImage img').hover(function() {
+                    $('#mainImage figcaption').slideToggle('fast');
                 });
 
             });
