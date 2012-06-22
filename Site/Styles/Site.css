@@ -97,6 +97,7 @@ a {
             #images li {
                 list-style: none;
                 float: left;
+                margin-bottom: 10px;
                 margin-right: 10px;
             }
             
